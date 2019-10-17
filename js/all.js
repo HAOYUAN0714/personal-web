@@ -38,7 +38,6 @@ $(document).ready(function(){
       if (targetPos -56 <= scrollPos && (targetPos + targetHeight) > scrollPos + 56) {
         // 設置 卷軸移到某錨點區塊範圍內的條件
         // 條件一: 錨點卷軸高度扣除navbar高後 不能比 當前視窗捲軸高度 還高 ，如果 錨點卷軸高度值更多 表示 卷軸還沒到錨點位置(超出的部分為navbar高度)
-        //
         // 條件二: 錨點卷軸高度 +  錨點區塊內容高度 需大於 當前視窗捲軸高度+navbar高度 ，如果相反 表示 卷軸已經超過此區塊(扣除navbar高度)了
         $('.scrollTop').removeClass('.active'); // 先解除所有選單效果
         $(this).addClass('active'); // 再把符合條件的選單套入效果
