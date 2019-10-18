@@ -65,7 +65,7 @@ $(document).ready(function(){
         $('.progress-bar').removeClass('progress-status-init');
       }
       let contactTop = $('#contact').position().top;
-      if (contactTop <= (scrollPos + windowHeight/2 -200 ) && !isContact) {
+      if (contactTop <= (scrollPos + windowHeight/2 -100 ) && !isContact) { // contact靠近footer 要比其他地方早點出現效果
         isContact = true;
         $('.contact-hide').removeClass('contact-hide');
         $('.form-hide').removeClass('form-hide');
