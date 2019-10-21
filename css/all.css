@@ -1,3 +1,7 @@
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Microsoft JhengHei","Segoe UI","Roboto","Helvetica Neue", Arial, sans-serif,"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+
 a {
   text-decoration: none;
 }
@@ -9,12 +13,23 @@ a:hover {
   color: #00f3ff !important;
 }
 
-.wrap {
-  font-family: "微軟正黑體", sans-serif;
-}
-
 .navbar-color {
   background-color: black;
+}
+
+.bigTitle-icon {
+  color: #ce2783;
+}
+
+.title-icon {
+  font-size: 2.5rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  color: #ce2783;
+}
+.separate-line {
+  width: 150px;
+  height: 4px;
+  background-color: #ce2783;
 }
 /* header */
 .header {
@@ -161,7 +176,6 @@ a:hover {
 }
 
 
-
 .about-content {
   transform: translateX(1000px);
   transition: all 1s;
@@ -189,14 +203,78 @@ a:hover {
   background: linear-gradient(to right, #111282, white);
 }
 
-.title-icon {
-  font-size: 2.5rem;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+
+.contact-separate-line {
+  width: 150px;
+  height: 3px;
+  background: -webkit-gradient(linear, left top, right top, from(rgb(43, 184, 67)), to(white));
+  background: -o-linear-gradient(left, rgb(43, 184, 67), white);
+  background: linear-gradient(to right, rgb(43, 184, 67), white);
 }
+.contact-item {
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+
+.contact-hide {
+  transform: translateX(-110%);
+}
+
+.social-fb {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  border-radius: 50%;
+  border: 2px solid #000;
+  color: #000;
+  /* border:2px solid #007bff;
+  color: #007bff; */
+  justify-content: center;
+  align-items: center;
+}
+
+.social-git {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  border-radius: 50%;
+  border: 2px solid #000;
+  color: #000;
+  /* border:2px solid #f14e32;
+  color: #f14e32; */
+  justify-content: center;
+  align-items: center;
+}
+
+.social-fb:hover {
+  color: white;
+  background-color: #000;
+}
+
+.social-git:hover {
+  color: white;
+  background-color: #000;
+}
+
+
+
+
+.contact-info-icon {
+  font-size: 24px;
+  width: 40px;
+}
+
+@media screen and (max-width:767px){
+  .contact-info-title {
+    text-align: center !important;
+  }
+}
+
 
 /* skill */
 .skill-section {
-  background:linear-gradient(#c90f0f,#9e1010,#5c0c0c) ;
+  background-color: black;
 }
 
 @media screen and (max-width:767px) {
@@ -221,7 +299,7 @@ a:hover {
 }
 
 .skill-icon-init {
-  background-color: rgb(0, 0, 0) !important;
+  /* background-color: rgb(0, 0, 0) !important; */
   transform: rotate(360deg) !important
 }
 
@@ -272,18 +350,29 @@ a:hover {
   color: rgb(9, 228, 228) !important;
 }
 .text-html {
-  color: rgb(255, 91, 31);
+  color: rgb(255, 91, 31) !important;
 }
-.text-css {
-  color: rgb(31, 154, 255);
+.text-git {
+  color: #f05033 !important;
 }
 .text-js{
-  color: rgb(250, 233, 3);
+  color: rgb(250, 233, 3) !important;
 }
 
+.text-vue {
+ color: #41b883 !important;
+}
+
+.text-boot {
+  color:#6a439c !important;
+}
+
+.text-jq {
+  color: #1e78ac !important;
+}
 /* skillLevel */
 
-.skillLevel-separate-line {
+/* .skillLevel-separate-line {
   width: 150px;
   height: 3px;
   background: -webkit-gradient(linear, left top, right top, from(#cc2b2b), to(white));
@@ -322,7 +411,7 @@ a:hover {
 .progress-status-60 {
   width: 60%;
   background: linear-gradient(to right, rgb(218, 43, 30) , rgb(154, 206, 69),rgb(167, 196, 40)) !important;
-}
+} */
 
 /* works */
 
@@ -382,72 +471,59 @@ a:hover {
   background-color: #ce2783 !important;
 }
 
+/* resume */
+
+.progress-line::before {
+  content: " ";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ce2783;
+  display: inline-block;
+
+}
+.progress-line::after {
+  content: " ";
+  width: 3px;
+  height: 100%;
+  background-color: #888;
+  display: block;
+  margin-left: 8.5px;
+  margin-top: -25px;
+}
+
+/* 選擇resumes 下的 row 再選取 row的最後1個子元素 */
+.resumes > .row:last-child :after {
+  opacity: 0;
+}
+.resumes-hidden {
+  overflow: hidden;
+}
+
+.resumes-animate {
+  transition: all 1s;
+}
+
+.resumes-hide {
+  transform: translateY(-100%);
+}
+
+
 /* contact */
 
-.contact-separate-line {
+/* .contact-separate-line {
   width: 150px;
   height: 3px;
   background: -webkit-gradient(linear, left top, right top, from(rgb(43, 184, 67)), to(white));
   background: -o-linear-gradient(left, rgb(43, 184, 67), white);
   background: linear-gradient(to right, rgb(43, 184, 67), white);
 }
-.contact-item {
-  -webkit-transition: all 1s;
-  -o-transition: all 1s;
-  transition: all 1s;
-}
-
-.contact-hide {
-  transform: translateX(110%);
-}
 
 .form-hide {
   transform: translateX(-110%);
-}
+} */
 
-.social-fb {
-  width: 40px;
-  height: 40px;
-  display: inline-block;
-  border-radius: 50%;
-  border:2px solid #007bff;
-  color: #007bff;
-}
 
-.social-git {
-  width: 40px;
-  height: 40px;
-  display: inline-block;
-  border-radius: 50%;
-  border:2px solid #f14e32;
-  color: #f14e32;
-}
-
-.social-fb:hover {
-  color: white;
-  background-color: #007bff;
-}
-
-.social-git:hover {
-  color: white;
-  background-color: #f14e32;
-}
-
-.fb-icon {
-  margin-left: 13px;
-  margin-top: 10.5px;
-}
-
-.git-icon {
-  margin-left: 10.5px;
-  margin-top: 10.5px;
-}
-
-@media screen and (max-width:767px) {
-  .social-center {
-    justify-content: center;
-  }
-}
 /* footer */
 
 .footer-bg {
@@ -485,13 +561,3 @@ a:hover {
 }
 
 
-.contact-info-icon {
-  font-size: 20px;
-  width: 40px;
-}
-
-@media screen and (max-width:767px){
-  .contact-info-title {
-    text-align: center !important;
-  }
-}

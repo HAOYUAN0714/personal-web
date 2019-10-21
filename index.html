@@ -24,11 +24,11 @@
     <a id="home" class="navbar-brand text-white" href="#">TOP</a>
     <div class="collapse navbar-collapse d-none d-md-flex justify-content-end " id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-item nav-link mr-3 text-gray scrollTop" href="#about">我的簡歷</a>
+        <a class="nav-item nav-link mr-3 text-gray scrollTop" href="#about">自傳簡介</a>
         <a class="nav-item nav-link mr-3 text-gray scrollTop" href="#skill">使用技術</a>
-        <a class="nav-item nav-link mr-3 text-gray scrollTop" href="#skillLevel">技能熟練度</a>
-        <a class="nav-item nav-link mr-3 text-gray scrollTop" href="#works">作品項目</a>
-        <a class="nav-item nav-link mr-3 text-gray scrollTop" href="#contact">聯絡資訊</a>
+        <a id="toResume" class="nav-item nav-link mr-3 text-gray scrollTop" href="#resume">學經歷</a>
+        <!-- <a class="nav-item nav-link mr-3 text-gray scrollTop" href="#skillLevel">技能熟練度</a> -->
+        <a id="toWorks" class="nav-item nav-link mr-3 text-gray scrollTop" href="#works">作品項目</a>
       </div>
     </div>
   </nav>
@@ -38,11 +38,11 @@
       <div class="text-content">
         <h2>您好，我是Yuan!</h2>
         <p>
-          歡迎參觀我的個人網站
+          歡迎參觀我的個人簡歷
           <br>
           這裡紀錄了我的相關資訊和作品
           <br>
-          希望您能在這裡得到一些收穫
+          還請您請多指教
         </p>
       </div>
       <div class="arrow mt-5">
@@ -56,29 +56,54 @@
   <section id="about" class="py-5">
     <div class="about-title-container d-flex flex-column justify-content-center align-items-center mb-5">
       <h2 class="font-weight-bold">ABOUT ME</h2>
-      <i class="fas fa-address-card title-icon" style="color:#111282"></i>
-      <div class="about-separate-line mt-4 mb-2"></div>
+      <i class="fas fa-address-card title-icon" ></i>
+      <div class="separate-line mt-4 mb-2"></div>
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-md-4 mb-md-0 mb-5" style="overflow: hidden;">
+        <div class="col-lg-4 col-md-5 mb-md-0 mb-5" style="overflow: hidden;">
           <div class="about-photo mx-auto"></div>
+          <div class="contact-hide contact-item">
+            <h3 class="my-4 text-center ">CONTACT</h3>
+            <div class="contact-infos">
+              <div class="d-flex mt-3 mb-4 justify-content-center">
+                <a class="social-fb mr-4" href="https://www.facebook.com/chengchengnono" ><i class="fab fa-facebook-f fb-icon"></i></a>
+                <a class="social-git " href="https://github.com/HAOYUAN0714" ><i class="fab fa-github git-icon"></i></a>
+              </div>
+              <div class="mb-3 d-flex align-items-center">
+                <div class="contact-info-icon d-flex justify-content-center mr-2">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <h4 class=" h5">joe82714@gmail.com</h4>
+              </div>
+              <!-- <div class="mb-3 d-flex align-items-center">
+                <div class="contact-info-icon">
+                  <i class="fab fa-line" style="color: #42c507;"></i>
+                </div>
+                <h4 class="my-0 h5">ID: 694471228</h4>
+              </div> -->
+              <div class="mb-3 d-flex align-items-center">
+                <div class="contact-info-icon d-flex justify-content-center mr-2">
+                  <i class="fas fa-mobile-alt" ></i>
+                </div>
+                <h4 class=" h5">0927070622</h4>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-md-8" style="overflow: hidden;">
+        <div class="col-lg-8 col-md-7" style="overflow: hidden;">
           <div class="about-content">
-            <h2 class="h5 font-weight-bold">您好，我是吳浩緣，今年26歲，來自台南。</h2>
-            <h5 class="text-right" style="font-size: 14px;">2019 /10 /17</h5>
+            <h3 class="h5 font-weight-bold">您好，我是吳浩緣，今年26歲，來自台南。</h3>
+            <h4 class="text-right" style="font-size: 14px;">2019 /10 /22</h4>
             <p>
-              於2015年畢業於國立屏東大學應用日語系，畢業後為了早點安定於職場隨即入伍，退伍後馬上找到了一間日商半導體公司以日文服務設備工程師的身份工作，這一做就是兩年半。
-              收入上對剛畢業的新鮮人來說相當穩定，主要工作內容就是團隊協作組裝機台，且時常需與客戶開會討論機台調整上的各種細節。除了日本外我還有去韓國出差3次，每次都至少3個月。
-              與韓國客戶溝通會比較困難，因為中日文都不能用，能夠使用的只有英文，說實在的英文已經荒廢很久，使用上真的有困難。不過客戶的英文也不算熟練，所以很常比手畫腳，
-              所幸機台相關的專有名詞的話我們雙方都懂，所以都還是能抓到重點。一些資歷較深的學長們也很會推敲客戶的用意，我在旁邊也偷學了不少。
-              而這也是我認為在這份工作學到的最重要的能力，就是該怎麼去與客戶討論、溝通，以及與1個團隊一起協助工作。
+              於2015年畢業於國立屏東大學應用日語系，畢業後為了早點安定於職場隨即入伍，退伍後找到了一間日商半導體公司以日文服務設備工程師的身份工作，這一做就是兩年半。
+              主要工作內容就是團隊協作組裝機台，後來也成長到了可以勝任裝置 leader 的職位。當上裝置 leader 後時常需與客戶開會討論機台所有事項，規劃、分配組員的工作內容，
+              掌握所有進度並詳實紀錄，以及對新進員工的教育指導等。責任與壓力雖然變大了，但對自己也更有信心、更加認同。
             </p>
             <p>
               在這份工作真的收穫不少，但後來考慮到未來的發展性，尤其專業技能的部分，工作上所學到的專業知識基本上都是以公司的機台為準。
               也就是說不是在這間公司的話，這些專業知識就很難再有作用，長久下來專業技能的成長幅度對未來的發展性顯然有些不足。我將我的想法告訴給同事們，
-              其中一位年紀比較大的學長就說，如果不考慮讀研究所的話，趁年輕去學點東西，例如寫程式也是不錯的選擇。聽完之後我也覺得可以嘗試看看。
+              其中我們裡面最資深的學長就說，如果沒有考慮讀研究所的話，趁年輕去學點東西，例如寫程式也是不錯的選擇。聽完之後我也覺得可以嘗試看看。
               所以就上網查詢一些相關資料，並找出自己有興趣的方向，而前端工程師似乎是個不錯的選擇，在摸索了一段時間後，我下定決心向公司提出離職，開始專注學習。
             </p>
             <p>
@@ -99,47 +124,91 @@
   <section id="skill" class="py-5 skill-section">
     <div class="skill-title-container d-flex flex-column justify-content-center align-items-center">
       <h2 class="font-weight-bold text-white">SKILL</h2>
-      <i class="fas fa-toolbox title-icon" style="color:#ddac4a" ></i>
-      <div class="skill-separate-line mt-4 mb-2"></div>
+      <i class="fas fa-toolbox title-icon"  ></i>
+      <div class="separate-line mt-4 mb-2"></div>
     </div>
     <div class="container mt-5">
       <div class="row">
-        <div id="html-area" class="skills col-md-4 d-flex align-items-center flex-column">
+        <div id="html-area" class="skills mb-4 col-md-4 d-flex align-items-center flex-column">
           <div class="skill-icon-init skill-icon-container d-flex justify-content-center align-items-center">
             <i class="fab fa-html5 skill-icons" style="color: rgb(255, 91, 31);"></i>
           </div>
           <div style="overflow: hidden;">
             <div class="skill-text-hide mt-4 skill-content-text text-center">
-              <h3 class="font-weight-bold">前端三大必備</h3>
-              <h5>HTML5</h5>
-              <h5>CSS3</h5>
-              <h5>Java Script</h5>
+              <h3 class="font-weight-bold skillName">HTML / CSS</h3>
+              <ul class="h5 text-left" style="list-style-type: none;">
+                <li class="mb-2">熟悉 HTML 與 CSS 的操作</li>
+                <li>使用 CSS 作出響應式網頁設計</li>
+              </ul>
             </div>
           </div>
         </div>
-        <div id="css-area" class="skills col-md-4 d-flex align-items-center flex-column">
+        <div id="js-area" class="skills mb-4 col-md-4 d-flex align-items-center flex-column">
           <div class="skill-icon-init skill-icon-container d-flex justify-content-center align-items-center" style="margin: 0 150px">
-            <i class="fab fa-css3-alt skill-icons" style="color: rgb(31, 154, 255);"></i>
-          </div>
-          <div style="overflow: hidden;">
-            <div class="skill-text-hide mt-4 skill-content-text text-center">
-              <h3 class="font-weight-bold ">CSS派生</h3>
-              <h5>Bootstrap 4</h5>
-              <h5>RWD</h5>
-              <h5>SCSS</h5>
-            </div>
-          </div>
-        </div>
-        <div id="js-area" class="skills col-md-4 d-flex align-items-center flex-column">
-          <div class="skill-icon-init skill-icon-container d-flex justify-content-center align-items-center">
             <i class="fab fa-js-square skill-icons" style="color: rgb(250, 233, 3);"></i>
           </div>
           <div style="overflow: hidden;">
             <div class="skill-text-hide mt-4 skill-content-text text-center">
-              <h3 class="font-weight-bold">JS派生</h3>
-              <h5>ES6</h5>
-              <h5>jQuery</h5>
-              <h5>Vue.js</h5>
+              <h3 class="font-weight-bold skillName">JavaScript</h3>
+              <ul class="h5 text-left" style="list-style-type: none;">
+              <li class="mb-2">使用 ES6 語法優化程式碼</li>
+              <li class="mb-2">使用 ESLint 統一程式碼撰寫規則</li>
+              <li class="mb-2">使用 AJAX 獲取遠端資料</li>
+            </div>
+          </div>
+        </div>
+        <div id="boot-area" class="skills mb-4 col-md-4 d-flex align-items-center flex-column">
+          <div class="skill-icon-init skill-icon-container d-flex justify-content-center align-items-center">
+            <i class="fab fa-bootstrap skill-icons" style="color:#6a439c"></i>
+          </div>
+          <div style="overflow: hidden;">
+            <div class="skill-text-hide mt-4 skill-content-text text-center">
+              <h3 class="font-weight-bold skillName">Boostrap 4</h3>
+              <ul class="h5 text-left" style="list-style-type: none;">
+                <li class="mb-2">使用 Boostrap 作出響應式設計</li>
+                <li class="mb-2">使用 SCSS 修改預設樣式</li>
+                <li class="mb-2">熟悉 Boostrap 元件操作</li>
+            </div>
+          </div>
+        </div>
+        <div id="jq-area" class="skills mb-4 col-md-4 d-flex align-items-center flex-column">
+          <div class="skill-icon-init skill-icon-container d-flex justify-content-center align-items-center">
+            <img src="./images/jQ-trans.png" width="88px" height="88px">
+          </div>
+          <div style="overflow: hidden;">
+            <div class="skill-text-hide mt-4 skill-content-text text-center">
+              <h3 class="font-weight-bold skillName">jQuery</h3>
+              <ul class="h5 text-left" style="list-style-type: none;">
+                <li class="mb-2">熟悉 jQuery 對 DOM 元素之操作</li>
+                <li class="mb-2">使用 jQuery 作出動畫效果</li>
+                <li class="mb-2">使用第三方插件整合到網頁上</li>
+            </div>
+          </div>
+        </div>
+        <div id="vue-area" class="skills mb-4 col-md-4 d-flex align-items-center flex-column">
+          <div class="skill-icon-init skill-icon-container d-flex justify-content-center align-items-center">
+            <i class="fab fa-vuejs skill-icons" style="color: #4fc08d;"></i>
+          </div>
+          <div style="overflow: hidden;">
+            <div class="skill-text-hide mt-4 skill-content-text text-center">
+              <h3 class="font-weight-bold skillName">Vue.js</h3>
+              <ul class="h5 text-left" style="list-style-type: none;">
+                <li class="mb-2">使用 Vue CLI 3 建立專案</li>
+                <li class="mb-2">使用 Vuex 對常用資料模組化管理</li>
+                <li class="mb-2">整合 Vue Router 等套件於專案上</li>
+            </div>
+          </div>
+        </div>
+        <div id="git-area" class="skills mb-4 col-md-4 d-flex align-items-center flex-column">
+          <div class="skill-icon-init skill-icon-container d-flex justify-content-center align-items-center">
+            <i class="fab fa-git-alt skill-icons" style="color: #f14e32;"></i>
+          </div>
+          <div style="overflow: hidden;">
+            <div class="skill-text-hide mt-4 skill-content-text text-center">
+              <h3 class="font-weight-bold skillName">Git</h3>
+              <ul class="h5 text-left" style="list-style-type: none;">
+                <li class="mb-2">熟悉 Git 基礎指令</li>
+                <li class="mb-2">善用 branch 與 merge 進行版控</li>
             </div>
           </div>
         </div>
@@ -147,7 +216,7 @@
     </div>
   </section>
 
-  <section id="skillLevel" class="py-5">
+  <!-- <section id="skillLevel" class="py-5">
     <div class="about-title-container d-flex flex-column justify-content-center align-items-center mb-5">
       <h2 class="font-weight-bold">SKILL LEVEL</h2>
       <i class="fas fa-fist-raised title-icon" style="color:#c9211b"></i>
@@ -213,14 +282,72 @@
         </div>
       </div>
     </div>
-  </section>
-
+  </section> -->
+  <section id="resume" class="py-5">
+      <div class="d-flex flex-column justify-content-center align-items-center mb-5 ">
+        <h2 class="font-weight-bold">Resume</h2>
+        <i class="fas fa-address-card title-icon" ></i>
+        <div class="separate-line mt-4 mb-2"></div>
+      </div>
+      <div class="container resumes">
+        <div class="row">
+          <div class="col-md-2">
+            <h3 class="font-weight-bold" style="font-size: 22px;">學歷</h3>
+          </div>
+          <div class="col-md-1 progress-line d-md-block  d-none"></div>
+          <div class="col-md-9 resumes-hidden ">
+            <div class="resumes-hide resumes-animate">
+              <h4 class="font-weight-bold" style="color: #ce2783;">國立屏東大學</h4>
+              <h5>應用日語系 <span class="font-italic font-weight-bold" style="font-size:14px">2011 / 7 ~ 2015 / 6</span></h5>
+              <ul>
+                <li>大學時期常參與校內活動，三年級更開始幫忙系學會，包含活動布置、規劃、採購等。</li>
+                <li>與其他4位同學代表系上參加淡江科大日文辯論比賽，在10間學校裡獲得第2名的成績。</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2">
+            <h3 class="font-weight-bold" style="font-size: 22px;">工作經驗</h3>
+          </div>
+          <div class="col-md-1 progress-line d-md-block  d-none"></div>
+          <div class="col-md-9  resumes-hidden ">
+            <div class="resumes-hide resumes-animate">
+              <h4 class="font-weight-bold" style="color: #ce2783;">禮坊囍餅</h4>
+              <h5>月餅外銷人員 <span class="font-italic font-weight-bold" style="font-size:14px">2013 / 7 ~ 2013 / 9</span></h5>
+              <ul>
+                <li>實地到各家公司或廠商進行陌生拜訪推銷中秋月餅，發掘潛在新客戶。</li>
+                <li>持續追蹤老客戶，繼續維持良好關係。</li>
+                <li>期間成功獲取訂單的客戶人數約占 15%。</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-1 progress-line d-md-block  d-none"></div>
+            <div class="col-md-9 resumes-hidden">
+              <div class="resumes-hide resumes-animate">
+                <h4 class="font-weight-bold" style="color: #ce2783;">日商美迪軻蘇</h4>
+                <h5>日文設備工程師 <span class="font-italic font-weight-bold" style="font-size:14px">2016 / 11 ~ 2019 / 4</span></h5>
+                <ul>
+                  <li>機台的組裝與定位設置及機台各部位之調機測試。</li>
+                  <li>協助日本人與台灣客戶或其他廠商間的溝通。</li>
+                  <li>回報每天工作內容，規劃組員工作責任區，掌握所有進度並以紙本與電子檔做紀錄確實追蹤</li>
+                  <li>機台試運行，實際處理樣本產品再依據樣本狀況調整機台的設定</li>
+                  <li>依據公司流程指導新進人員技術培養</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
   <section id="works">
     <div class="works-bg py-5">
       <div class="about-title-container d-flex flex-column justify-content-center align-items-center mb-5">
         <h2 class="font-weight-bold text-white">WORKS</h2>
-        <i class="fas fa-palette title-icon" style="color:#ce2783"></i>
-        <div class="works-separate-line mt-4 mb-2"></div>
+        <i class="fas fa-palette title-icon" ></i>
+        <div class="separate-line mt-4 mb-2"></div>
       </div>
       <div class="container py-3">
         <div class="row">
@@ -233,7 +360,7 @@
               </div>
               <div class="works-detail-content d-none d-md-block">
                 <div style="display: inline-block; line-height: 8px;">
-                  <h5 class="text-white">安德烈電商工坊</h5><br>
+                  <h3 class="text-white h5">安德烈電商工坊</h3><br>
                   <span>
                     <a class="btn btn-outline-primary demo-btn mr-2"  href='https://github.com/HAOYUAN0714/andre-workshop/blob/master/README.md'>Detail</a>
                     <a class="btn btn-outline-purple demo-btn"  href='https://haoyuan0714.github.io/andre-workshop/#/index'>DEMO</a>
@@ -251,7 +378,7 @@
               </div>
               <div class="works-detail-content d-none d-md-block">
                 <div style="display: inline-block; line-height: 8px;">
-                  <h5 class="text-white">Todo-List</h5><br>
+                  <h3 class="text-white h5">Todo-List</h3><br>
                   <a class="btn btn-outline-primary demo-btn mr-2"  href='https://github.com/HAOYUAN0714/todolist.github.io/blob/master/README.md'>Detail</a>
                   <a class="btn btn-outline-purple demo-btn" href="https://haoyuan0714.github.io/todolist.github.io/">DEMO</a>
                 </div>
@@ -266,7 +393,7 @@
               </div>
               <div class="works-detail-content d-none d-md-block">
                 <div style="display: inline-block; line-height: 8px;">
-                  <h5 class="text-white">九九乘法表</h5><br>
+                  <h3 class="text-white h5">九九乘法表</h3><br>
                   <a class="btn btn-outline-purple demo-btn" href="https://codepen.io/WU-HAO-YUAN/full/yLBJPvw">DEMO</a>
                 </div>
               </div>
@@ -280,7 +407,7 @@
               </div>
               <div class="works-detail-content d-none d-md-block">
                 <div style="display: inline-block; line-height: 8px;">
-                  <h5 class="text-white">我的個人網站</h5><br>
+                  <h3 class="text-white h5">我的個人網站</h3><br>
                   <a class="btn btn-outline-primary demo-btn" href="https://github.com/HAOYUAN0714/personal-web/blob/master/README.md">Detail</a>
                 </div>
               </div>
@@ -295,7 +422,7 @@
               </div>
               <div class="works-detail-content d-none d-md-block">
                 <div style="display: inline-block; line-height: 8px;">
-                  <h5 class="text-white">高雄旅遊資訊</h5><br>
+                  <h3 class="text-white h5">高雄旅遊資訊</h3><br>
                   <span>
                     <a class="btn btn-outline-primary demo-btn mr-2"  href='https://github.com/HAOYUAN0714/Kaohsiung/blob/master/README.md'>Detail</a>
                     <a class="btn btn-outline-purple demo-btn"  href='https://haoyuan0714.github.io/Kaohsiung/'>DEMO</a>
@@ -313,7 +440,7 @@
               </div>
               <div class="works-detail-content d-none d-md-block">
                 <div style="display: inline-block; line-height: 8px;">
-                  <h5 class="text-white">BMI計算器</h5><br>
+                  <h3 class="text-white h5">BMI計算器</h3><br>
                   <span>
                     <a class="btn btn-outline-primary demo-btn mr-2"  href='https://github.com/HAOYUAN0714/BMI/blob/master/README.md'>Detail</a>
                     <a class="btn btn-outline-purple demo-btn"  href='https://haoyuan0714.github.io/BMI/'>DEMO</a>
@@ -327,7 +454,8 @@
     </div>
   </section>
 
-  <section id="contact" class="py-5 text-white" style="background-color: black;">
+
+  <!-- <section id="contact" class="py-5 text-white" style="background-color: black;">
     <div class="skill-title-container d-flex flex-column justify-content-center align-items-center">
       <h2 class="font-weight-bold text-white">CONTACT</h2>
       <i class="fas fa-envelope title-icon" style="color:rgb(43, 184, 67)" ></i>
@@ -347,19 +475,19 @@
                 <div class="contact-info-icon">
                   <i class="fas fa-envelope" style="color:#f3e105;"></i>
                 </div>
-                <h5 class="my-0">joe82714@gmail.com</h5>
+                <h4 class="my-0 h5">joe82714@gmail.com</h4>
               </div>
               <div class="mb-3 d-flex align-items-center">
                 <div class="contact-info-icon">
                   <i class="fab fa-line" style="color: #42c507;"></i>
                 </div>
-                <h5 class="my-0">ID: 694471228</h5>
+                <h4 class="my-0 h5">ID: 694471228</h4>
               </div>
               <div class="mb-3 d-flex align-items-center">
                 <div class="contact-info-icon">
                   <i class="fas fa-mobile-alt" style="color: #01d0ff"></i>
                 </div>
-                <h5 class="my-0">+886 927070622</h5>
+                <h4 class="my-0 h5">+886 927070622</h4>
               </div>
 
             </div>
@@ -382,7 +510,7 @@
               </div>
               <div class="d-flex justify-content-end">
                 <button id="contact-submit" type="submit" class="btn btn-outline-green px-4">送出</button>
-                <!-- 隱藏的連結用來傳送表單 -->
+
                 <a id="send-connect"></a>
               </div>
             </form>
@@ -390,7 +518,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <footer class="text-center footer-bg ">
     <div class="footer-bg-cover" style="padding: 48px 0;">
@@ -399,7 +527,7 @@
   </footer>
 
 <!-- modal -->
-<div id="contact-modal" class="modal" tabindex="-1" role="dialog">
+<!-- <div id="contact-modal" class="modal" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
       <div class="modal-content rounded-0">
         <div class="modal-header bg-danger text-white rounded-0">
@@ -416,7 +544,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 </div>
 </body>
 <script src="js/all.js"></script>
